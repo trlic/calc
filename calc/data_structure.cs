@@ -679,10 +679,7 @@ namespace dk.calc.dto
                     returnvalue = new CalcNumber(a.get_double() * b.get_double());
                     break;
                 case "/":
-                    if (b.get_double() != 0)
-                        returnvalue = new CalcNumber(a.get_double() / b.get_double());
-                    else
-                        returnvalue = new CalcNumber();
+                    returnvalue = new CalcNumber(a.get_double() / b.get_double());                    
                     break;
                 default:
                     returnvalue = new CalcNumber();
